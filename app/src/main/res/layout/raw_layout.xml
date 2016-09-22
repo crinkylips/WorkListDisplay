@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+
+
+    >
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:id="@+id/text_user_name"
+        android:gravity="center"
+        android:textColor="#fdfcfc"
+        android:background="#6c93ee"
+        android:text="Name..."
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:id="@+id/text_user_device"
+        android:gravity="center"
+        android:textColor="#fdfcfc"
+        android:background="#6c93ee"
+        android:text="Device..."
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:id="@+id/text_user_repair"
+        android:gravity="center"
+        android:textColor="#fdfcfc"
+        android:background="#6c93ee"
+        android:text="Repair..."
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:id="@+id/text_user_status"
+        android:gravity="center"
+        android:textColor="#fdfcfc"
+        android:background="#6c93ee"
+        android:text="Status..."
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:id="@+id/text_user_priority"
+        android:gravity="center"
+        android:textColor="#fdfcfc"
+        android:background="#6c93ee"
+        android:text="Priority..."
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:id="@+id/text_user_booked"
+        android:gravity="center"
+        android:textColor="#fdfcfc"
+        android:background="#6c93ee"
+        android:text="Booked"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textIsSelectable="true"
+         />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:id="@+id/text_user_colour"
+        android:gravity="center"
+        android:textColor="#fdfcfc"
+        android:background="#6c93ee"
+        android:text="Colour"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textIsSelectable="true"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+</LinearLayout>

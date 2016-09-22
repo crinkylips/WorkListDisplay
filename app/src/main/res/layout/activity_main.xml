@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="10"
+    android:rowCount="10">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="#9e3aabd8"
+            android:layout_marginTop="410dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="3dp"
+            android:weightSum="1"
+            android:paddingBottom="3dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Add Worklist"
+                android:layout_alignParentTop="true"
+                android:id="@+id/addContact"
+                android:onClick="addWork"
+                android:layout_alignEnd="@+id/searchWork"
+                android:layout_alignStart="@+id/viewWorklist"
+                android:paddingRight="10dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textAlignment="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="View Worklist"
+                android:onClick="viewWork"
+                android:id="@+id/viewWorklist"
+                android:layout_below="@+id/addContact"
+                android:layout_marginTop="0dp"
+                android:layout_alignEnd="@+id/searchWork"
+                android:layout_alignStart="@+id/button5"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textAlignment="center"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Search Worklist"
+                android:layout_marginTop="0dp"
+                android:id="@+id/searchWork"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/button5"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:onClick="searchWork"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textAlignment="center"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Update Worklist"
+                android:id="@+id/updateWorklist"
+                android:layout_below="@+id/searchWork"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:onClick="updateWorklist"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textAlignment="center"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Delete Contacts"
+                android:id="@+id/button5"
+                android:layout_below="@+id/updateWorklist"
+                android:layout_alignEnd="@+id/updateWorklist"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:onClick="deleteWork"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="51dp">
+
+            <VideoView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/logoLoop"
+
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+
+                 />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</GridLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WorkList</string>
+    <string-array name="colours">
+        <item></item>
+        <item>Yellow T.B.D</item>
+        <item>Blue W.O.P</item>
+        <item>Green W.O.C</item>
+        <item>Red DONE</item>
+    </string-array>
+
+
+</resources>

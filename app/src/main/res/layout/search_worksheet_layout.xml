@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:onClick="searchContact"
+        android:id="@+id/button"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#e30095ff"
+        android:layout_marginTop="47dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Delete_contact" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/Delete_contact"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#e30095ff"
+        android:padding="7.5dp"
+        android:onClick="deleteContact"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_marginBottom="57dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Search_name"
+        android:hint="Enter Name"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignBottom="@+id/button" />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="8"
+        android:id="@+id/gridLayout"
+        android:layout_above="@+id/Delete_contact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Name..."
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="#6c93ee"
+            android:text="Name..."
+            android:id="@+id/display_name"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Device..."
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="1"
+            android:textStyle="bold"
+            android:id="@+id/display_device"
+            android:text="Device..."
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Status..."
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="4"
+            android:id="@+id/display_status"
+            android:text="Status..."
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Priority..."
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="2"
+            android:id="@+id/display_priority"
+            android:text="Priority..."
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Booked "
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="5"
+            android:id="@+id/display_booked"
+            android:text="Booked "
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+             />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Repair..."
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="3"
+            android:id="@+id/display_repair"
+            android:text="Repair..."
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_below="@+id/gridLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:id="@+id/display_colour"
+            android:hint="Colour"
+            android:text="Colour"
+            android:textSize="20sp"
+            android:textColor="#fdfcfc"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#6c93ee"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="0"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/UpdateWork"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="top"
+             >
+        </TextView>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Search Work Sheet"
+        android:id="@+id/UpdateWork"
+        android:background="#1f8e8e8e"
+        android:padding="10dp"
+        android:layout_marginTop="39dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/Search_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
+
+</RelativeLayout>

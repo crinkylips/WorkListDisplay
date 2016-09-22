@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/UpdateButton"
+        android:textColor="#fdfcfc"
+        android:layout_marginBottom="66dp"
+        android:background="#6c93ee"
+        android:textSize="25sp"
+        android:onClick="updateButton"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/gridLayout" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:onClick="searchWorklist"
+        android:id="@+id/SearchButton"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#6c93ee"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/UpdateButton"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Update Work Sheet"
+        android:id="@+id/UpdateWork"
+        android:background="#1f8e8e8e"
+        android:padding="10dp"
+        android:layout_marginTop="39dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/Search_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Search_name"
+        android:hint="Enter Name"
+        android:layout_alignBottom="@+id/SearchButton"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/SearchButton" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="8"
+        android:id="@+id/gridLayout"
+        android:layout_above="@+id/UpdateButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="56dp">
+
+
+        <EditText
+
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Name..."
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:text="Name..."
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="#6c93ee"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/Update_name"
+
+             />
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Device..."
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="1"
+            android:textStyle="bold"
+            android:text="Device..."
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/Update_device"
+             />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Status..."
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="3"
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/Update_repair"
+            android:text="Repair..."
+             />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Priority..."
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="4"
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/Update_status"
+            android:text="Status..."
+             />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Booked "
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="2"
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/Update_priority"
+            android:text="Priority..."
+            />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Repair..."
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="5"
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_below="@+id/gridLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/Update_booked"
+            android:text="Booked "
+             />
+        <EditText
+            android:id="@+id/Update_colour"
+            android:hint="Colour"
+            android:text="Colour"
+            android:textSize="20sp"
+            android:textColor="#fdfcfc"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#6c93ee"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="0"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/UpdateWork"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="top"
+            >
+        </EditText>
+    </GridLayout>
+
+</RelativeLayout>

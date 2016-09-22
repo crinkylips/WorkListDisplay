@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"><![CDATA[
+
+
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert Work"
+        android:id="@+id/addWorkToList"
+        android:layout_column="0"
+        android:layout_marginLeft="765dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="#e30095ff"
+        android:layout_marginTop="52dp"
+        android:onClick="addWorkToList"
+        android:padding="7dp"
+        android:shadowColor="#646464"
+        android:textColorHighlight="#ff0000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="39dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/gridLayout"
+        android:columnCount="18"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/addWorkToList"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="147dp">
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="#6c93ee"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/user_name"
+            android:hint="Name..."
+            />
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="1"
+            android:textStyle="bold"
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/user_device"
+            android:hint="Device..."
+            />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="2"
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/user_priority"
+            android:hint="Priority..."
+             />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="3"
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/user_repair"
+            android:hint="Repair..."
+            />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="4"
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/user_status"
+            android:hint="Status..."
+            />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_row="0"
+            android:textColor="#fdfcfc"
+            android:textSize="20sp"
+            android:layout_column="5"
+            android:background="#6c93ee"
+            android:padding="10dp"
+            android:layout_below="@+id/gridLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+
+            android:id="@+id/user_booked"
+            android:hint="Booked "
+            />
+
+        <EditText
+            android:id="@+id/user_colour"
+            android:hint="Colour"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="#6c93ee"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="0"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="top"
+            android:textStyle="bold"
+            android:textColor="#fdfcfc"
+            android:layout_below="@+id/gridLayout"
+            android:layout_centerHorizontal="true"
+
+
+        />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Work Sheet Input"
+        android:id="@+id/UpdateWork"
+        android:background="#1f8e8e8e"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
